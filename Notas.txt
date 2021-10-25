@@ -1,0 +1,26 @@
+Aula 1
+    POO == Programação orientada a objetos
+        Filosofia de desenvolvimento que tem como objetivo aproximar o mundo digital do mundo real através do conceito de objetos.
+
+    Evolução da Programação
+        programação de baixo nível (linguagem de máquina) > programação linear > programação estruturada > programação modular > programação orientada a objetos
+
+    Criador da POO
+        Alan kay, biólogo e matemático
+
+    Postulado de Alan kay
+        "o computador ideal deveria funcionar como um organismo vivo, isto é, cada "célula" comportar-se-ia relacionando-se com outras a fim de alcançar um objetivo, contudo, funcionando de forma autônoma. As células poderiam também reagrupar-se para resolver um outro problema ou desempenhar outras funções."
+
+    Vantagens da POO
+        C.onfiável
+            O isolamento entre as partes gera software seguro. Ao alterar uma parte, nenhuma outra é afetada.
+        O.portuno
+            Ao dividir tudo em partes, várias delas podem ser desenvolvidas em paralelo
+        M.anutenível
+            Atualizar um software é mais fácil. Uma pequena modificação vai beneficiar todas as partes que usarem o objeto.
+        E.xtensível
+            O software não é estático. Ele deve crescer para permanecer útil 
+        R.eutilizável
+            Podemos usar objetos de um sistema que criamos em outro sistema futuro
+        N.atural
+            Mais fácil de entender. Você se preocupa mais na funcionalidade do que nos detalhes de implementação
