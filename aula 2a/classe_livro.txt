@@ -1,0 +1,38 @@
+classe livro
+    //atributos
+        titulo: Caractere
+        paginas: Inteiro
+        autor: Caractere
+        editora: Caractere
+        edicao: Caractere
+        formato: Caractere
+        paginaLida: inteiro
+        status: Caractere
+
+    //métodos
+        abrir(){
+            aberto = verdadeiro
+        }
+        
+        ler(){
+            se(aberto == verdadeiro){
+                livro.paginaLida = 0
+                para(i = 0; i <= livro.paginas; i++){
+                    livro.paginaLida = livro.paginaLida + i 
+                }
+                livro.status = "lido"
+            }
+        }
+
+        fechar(){
+            aberto == falso
+        }
+
+    //estados
+        aberto
+        fechado
+        lido
+        naoLido
+        lendo
+        
+FimClasse

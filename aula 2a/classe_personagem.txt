@@ -1,0 +1,41 @@
+classe personagem
+    //atributos
+        nome: Caractere
+        idade: Caractere
+        altura: real
+        peso: real
+        descricao: Caractere
+        cenario: Caractere
+        força: inteiro
+        destreza: inteiro
+        constituição: inteiro
+        sabedoria: inteiro
+        carisma: inteiro
+        inteligencia: inteiro
+
+    //métodos
+        atacar(){
+
+        }
+
+        investigar(){
+
+        }
+
+        perceber(){
+
+        }
+
+        persuadir(){
+
+        }
+
+        esconder(){
+
+        }
+    
+    //estados
+        vivo
+        morto
+        inconsiente
+FimClasse

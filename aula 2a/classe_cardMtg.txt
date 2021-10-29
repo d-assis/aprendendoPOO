@@ -1,0 +1,32 @@
+classe cardMtg
+    //atributos
+    cor: Caractere
+    nome: Caractere
+    custo: Caractere
+    custoConvertido: Inteiro
+    tipo: Caractere
+    ruleText: Caractere
+    flavorText: Caractere
+    set: Caractere
+    artista: Caractere
+
+    //métodos
+    comprar(){
+        inHand = verdadeiro
+    }
+
+    castar(){
+        se(inHand == verdadeiro){
+            etb = verdadeiro
+            manaPool = manaPool - cardMtg.custoConvertido
+        }
+    }
+
+    //estados
+    
+    inHand
+    inGrave
+    inField
+    inExile
+
+FimClasse
