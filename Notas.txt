@@ -94,3 +94,41 @@ Aula 2 - O que são objetos
             c2.ponta = 1.0
             c2.tampada = falso
             c2.tampar()
+
+Aula 3 - Visibilidade de um objeto
+
+    linguagem de modelagem unificada (L.M.U, U.M.L ou diagrama de classes)
+        Trata-se de uma estrutura super simplificada para a criação de classes dentro da POO.
+        o exemplo de classe da aula 1 representa bem o conceito
+
+    Modificadores de Visibilidade
+        Indicam o nível de acesso aos componentes internos de uma classe.
+        + representa visibilidade pública
+            classe atual e todas as outras classes possuem acesso ao componente
+        - representa visibilidade privada
+            somente a classe atual possui acesso ao componente
+        # representa visibilidade protegida
+            classe atual e todas as suas subclasses possuem acesso ao componente
+
+    Exemplo de declaração de classe com visibilidade
+        Classe Caneta
+            Publico modelo: Caractere
+            Publico cor: Caractere
+            Privado ponta: Real
+            Protegido carga: Inteiro
+            Protegido tampada: Logico
+
+            Publico Metodo escrever()
+            FimMetodo
+
+            Publico Metodo rabiscar()
+            FimMetodo
+
+        FimClasse
+    
+    Manipulação da classe declarada
+        c1 = nova Caneta
+        c1.modelo = "BIC cristal"
+        c1.cor = "Azul"
+        c1.ponta = 0.5 //linha inválida, o atributo manipulado é privado, necessita de um método acessor
+        c1.carga = 80 // linha inválida, o atributo manipulado é protegido, necessita de um método acessor
