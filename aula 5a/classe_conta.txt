@@ -1,0 +1,124 @@
+classe Conta
+    publico numConta: Inteiro
+    protegido tipo: Caractere
+    privado dono: Caractere
+    privado saldo: Real
+    privado status: Logico
+
+    publico Metodo abrirConta(t:Caractere)
+        setTipo(t)
+        setStatus(verdadeiro)
+
+        se (t = "CC") entao
+            saldo = 50
+        senao se (t = "CP") entao
+            saldo = 150
+        FimSe
+    FimMetodo
+
+    publico Metodo fecharConta()
+        se (saldo > 0) entao
+            escreva ("Conta ainda possui saldo, saque o valor para habilitar o fechamento")
+        senao se (saldo < 0) entao
+            escreva("conta com saldo negativo, salde a dívida para habilitar o fechamento")
+        senao
+            Conta.status = falso
+        FimSe
+    FimMetodo
+
+    publico Metodo depositar(v)
+        se (status == verdadeiro) entao
+            Conta.saldo = Conta.saldo + v
+        senao
+            escreva("Não é possível depositar, conta fechada ou inexistente")
+        FimSe
+    FimMetodo
+
+    publico Metodo sacar(v)
+        se (status == verdadeiro) entao
+            se(saldo > v) entao
+                Conta.saldo = Conta.saldo - v
+            senao
+                escreva("Saldo insuficiente")
+            FimSe
+        senao
+            escreva("Não é possível sacar, conta fechada ou inexistente")
+        FimSe
+    FimMetodo
+
+    publico pagarTaxas()
+        var v: Real
+        se (Conta.tipo == "CC") entao
+            v = 12
+        senao se (Conta.tipo == "CP") entao
+            v = 20
+        FimSe
+
+        se (Conta.status == verdadeiro) entao 
+            se (Conta.saldo >= v) entao  
+                Conta.saldo = Conta.saldo - v
+            senao  
+                escreva("Saldo insuficiente")
+            FimSe
+        senao 
+            escreva("Não é possível pagar as taxas, conta fechada ou inexistente")
+        FimSe
+    FimMetodo
+
+    Metodo getNumConta()
+        retorne Conta.numConta
+    FimMetodo
+
+    Metodo setNumConta(n:Inteiro)
+        Conta.numConta = n
+    FimMetodo
+
+    Metodo getTipo()
+        retorne Conta.tipo
+    FimMetodo
+
+    Metodo setTipo(t:Caractere)
+        Conta.tipo = t
+    FimMetodo
+
+    Metodo getDono()
+        retorne Conta.dono
+    FimMetodo
+
+    Metodo setDono(d:Caractere)
+        Conta.dono = d
+    FimMetodo
+
+    Metodo getSaldo()
+        retorne Conta.saldo
+    FimMetodo
+
+    Metodo setSaldo(sa:Real)
+        Conta.saldo = sa
+    FimMetodo
+
+    Metodo getStatus()
+        retorne Conta.saldo
+    FimMetodo
+
+    Metodo setStatus(st:Logico)
+        Conta.status = st
+    FimMetodo
+
+    publico Metodo construtor()
+        Conta.saldo = 0
+        Conta.status = falso
+    FimMetodo
+    /*
+    é possível criar um método contrutor que faça chamadas para métodos acessores?
+    publico Metodo construtor(nc,t,d,sa,st)
+        setNumConta(nc)
+        setTipo(t)
+        setDono(d)
+        setSaldo(sa)
+        setStatus(st)
+    FimMetodo
+    */
+
+
+FimClasse
