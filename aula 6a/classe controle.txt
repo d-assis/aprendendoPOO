@@ -1,0 +1,97 @@
+classe ControleRemoto implementa Controlador
+
+    // Atributos
+    privado Logico ligado
+    privado Inteiro volume
+    privado Logico tocando
+
+    //Metodos especiais
+    publico Metodo Construtor()
+        volume = 50
+        ligado = falso
+        tocando = falso
+    FimMetodo
+
+    publico Metodo getLigado()
+        retorne ligado
+    FimMetodo
+
+    publico Metodo getVolume()
+        retorne volume
+    FimMetodo
+
+    publico Metodo getTocando()
+        retorne tocando
+    FimMetodo
+
+    publico Metodo setLigado(l: Logico)
+        controleRemoto.ligado = l
+    FimMetodo
+
+    publico Metodo setTocando(t: Logico)
+        controleRemoto.tocando = t
+    FimMetodo
+
+    publico Metodo setVolume(v: Inteiro)
+        controleRemoto.volume = v
+    FimMetodo
+
+    //Metodos (implementados do controlador)
+    publico Metodo ligar()
+        setLigado(verdadeiro)
+    FimMetodo
+
+    publico Metodo desligar()
+        setLigado(falso)
+    FimMetodo
+
+    publico Metodo abrirMenu()
+        Escreva(getLigado())
+        Escreva(getVolume())
+        para i = 0 ate getVolume() passo 10 faca
+            Escreva("|")
+        FimPara
+        Escreva(getTocando())
+    FimMetodo
+
+    publico Metodo fecharMenu()
+        Escreva("fechando")
+    FimMetodo
+
+    publico Metodo maisVolume()
+        se(getLigado() == verdadeiro) entao
+            setVolume(getVolume() + 1)
+        FimSe
+    FimMetodo
+
+    publico Metodo menosVolume()
+        se(getLigado() == verdadeiro) entao
+            setVolume(getVolume() - 1)
+        FimSe
+    FimMetodo
+
+    publico Metodo ligarMudo()
+        se(getLigado() == verdadeiro e getVolume() > 0) entao
+            setVolume(0)
+        FimSe
+    FimMetodo
+
+    publico Metodo desligarMudo()
+        se(getLigado() e getVolume() == 0) entao
+            setVolume(50)
+        FimSe
+    FimMetodo
+
+    publico Metodo play()
+        se(getLigado() == verdadeiro) entao
+            setTocando(verdadeiro)
+        FimSe
+    FimMetodo
+
+    publico Metodo pause()
+        se(getLigado() == verdadeiro e getTocando() == verdadeiro) entao
+            setTocando(falso)
+        FimSe
+    FimMetodo
+
+FimClasse

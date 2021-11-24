@@ -1,0 +1,99 @@
+classe Lutador
+//atributos
+    privado nome : Caractere 
+    privado nacionalidade : Caractere 
+    privado idade : Inteiro 
+    privado altura : Real 
+    privado peso : Real  
+    privado categoria : Caractere 
+    privado vitorias : Inteiro 
+    privado derrotas : Inteiro 
+    privado empates : Inteiro 
+
+//metodos especiais
+    publico metodo construtor(
+        no:Caractere,
+        na:Caractere,
+        id:Inteiro,
+        al:Real,
+        pe:Real,
+        vi:Inteiro,
+        de:Inteiro,
+        em:Inteiro
+    )
+        nome = no
+        nacionalidade = na
+        
+    FimMetodo
+
+    publico metodo getNome()
+    FimMetodo
+
+    publico metodo setNome()
+    FimMetodo
+
+    publico metodo getNacionalidade()
+    FimMetodo
+
+    publico metodo setNacionalidade()
+    FimMetodo
+
+    publico metodo getIdade()
+    FimMetodo
+
+    publico metodo setIdade()
+    FimMetodo
+
+    publico metodo getPeso()
+    FimMetodo
+
+    publico metodo setPeso()
+    FimMetodo
+
+    publico metodo getAltura()
+    FimMetodo
+
+    publico metodo setAltura()
+    FimMetodo
+    
+    publico metodo getCategoria()
+    FimMetodo
+
+    publico metodo setCategoria()
+    FimMetodo
+
+    publico metodo getVitorias()
+    FimMetodo
+
+    publico metodo setVitorias()
+    FimMetodo
+
+    publico metodo getDerrotas()
+    FimMetodo
+
+    publico metodo setDerrotas()
+    FimMetodo
+
+    publico metodo getEmpates()
+    FimMetodo
+
+    publico metodo setEmpates()
+    FimMetodo
+
+//Metodos
+    publico metodo apresentar()
+    FimMetodo
+
+    publico metodo status()
+    FimMetodo
+
+    publico metodo ganharLuta()
+    FimMetodo
+
+    publico metodo perderLuta()
+    FimMetodo
+
+    publico metodo empatarLuta()
+    FimMetodo
+
+FimClasse

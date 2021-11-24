@@ -191,3 +191,20 @@ Aula 4 - métodos especiais
         Escreva(c1.getPonta())
 
         c2 = nova Caneta("BIC","Azul", 0.5)
+
+Aula 6a - Pilares da POO (encapsulamento)
+    Encapsular
+        Ocultar partes independentes da implementação, permitindo construir partes invisíveis ao mundo exterior.
+        Encapsular não é obrigatório, mas é uma boa prática para produzir classes mais eficientes.
+
+    Vantagens de encapsulamento
+        1- tornar mudanças invisíveis
+
+        2- facilitar reutilização de código
+
+        3- reduzir efeitos colaterais
+
+    Interface
+        Lista de serviços fornecidos por um componente. É o contato com o mundo exterior, que define o que pode ser feito com um objeto dessa classe.
+
+Aula 7a - Relacionamento entre classes
