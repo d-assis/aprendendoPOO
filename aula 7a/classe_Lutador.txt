@@ -19,81 +19,130 @@ classe Lutador
         pe:Real,
         vi:Inteiro,
         de:Inteiro,
-        em:Inteiro
-    )
-        nome = no
-        nacionalidade = na
-        
+        em:Inteiro)
+
+        Lutador.nome = no
+        Lutador.nacionalidade = na
+        Lutador.idade = id
+        setPeso(pe)
+        vitorias = vi
+        derrotas = de
+        empates = em      
     FimMetodo
 
     publico metodo getNome()
+        retorne nome
     FimMetodo
 
-    publico metodo setNome()
+    publico metodo setNome(no: Caractere)
+        nome = no
     FimMetodo
 
     publico metodo getNacionalidade()
+        retorne nacionalidade
     FimMetodo
 
-    publico metodo setNacionalidade()
+    publico metodo setNacionalidade(na: Caractere)
+        nacionalidade = na
     FimMetodo
 
     publico metodo getIdade()
+        retorne idade
     FimMetodo
 
-    publico metodo setIdade()
+    publico metodo setIdade(id: Inteiro)
+        idade = id
     FimMetodo
 
     publico metodo getPeso()
+        retorne peso
     FimMetodo
 
-    publico metodo setPeso()
+    publico metodo setPeso(pe: Real)
+        peso = pe
+        setCategoria()
     FimMetodo
 
     publico metodo getAltura()
+        retorne altura
     FimMetodo
 
-    publico metodo setAltura()
+    publico metodo setAltura(al: Real)
+        altura = al
     FimMetodo
     
     publico metodo getCategoria()
+        retorne categoria
     FimMetodo
 
     publico metodo setCategoria()
+        se(peso < 52.2) entao
+            categoria = "Inválido"
+        senao se(peso <= 70.3)entao
+            categoria = "Leve"
+        senao se(peso <= 83.9) entao
+            categoria = "Médio"
+        senao se(peso <= 120.2) entao
+            categoria = "Pesado"
+        senao
+            categoria = "Inválido"
+        FimSe
     FimMetodo
 
     publico metodo getVitorias()
+        retorne vitorias
     FimMetodo
 
-    publico metodo setVitorias()
+    publico metodo setVitorias(vi: Inteiro)
+        vitorias = vi
     FimMetodo
 
     publico metodo getDerrotas()
+        retorne derrotas
     FimMetodo
 
-    publico metodo setDerrotas()
+    publico metodo setDerrotas(de: Inteiro)
+        derrotas = de
     FimMetodo
 
     publico metodo getEmpates()
+        retorne empates
     FimMetodo
 
-    publico metodo setEmpates()
+    publico metodo setEmpates(em: Inteiro)
+        empates = em
     FimMetodo
 
 //Metodos
     publico metodo apresentar()
+        Escreva("Lutador: ", getNome())
+        Escreva("Origem: ", getNacionalidade())
+        Escreva("com ", getIdade(), " anos")
+        Escreva("medindo", getAltura(), " metros de altura")
+        Escreva("pesando ", getPeso(), "kg")
+        Escreva("com ", getVitorias(), "vitorias")
+        Escreva(getDerrotas(), "derrotas")
+        Escreva("e ", getEmpates(), "empates")
     FimMetodo
 
     publico metodo status()
+        Escreva(getNome())
+        Escreva("É um peso", getCategoria())
+        Escreva(getVitorias(), " vitórias")
+        Escreva(getDerrotas(), " derrotas")
+        Escreva(getEmpates(), " empates")
     FimMetodo
 
     publico metodo ganharLuta()
+        setVitorias(getVitorias() + 1)
     FimMetodo
 
     publico metodo perderLuta()
+        setDerrotas(getDerrotas() + 1)
     FimMetodo
 
     publico metodo empatarLuta()
+        setEmpates(getEmpates() + 1)
     FimMetodo
 
 FimClasse
