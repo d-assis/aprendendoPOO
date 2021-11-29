@@ -1,0 +1,19 @@
+classe Lutador
+
+//Atributos
+    privado desafiado : Caractere
+
+    privado desafiante: Caractere
+
+    privado rounds: Inteiro
+
+    privado aprovada: Logico
+
+//Metodos especiais
+
+//Metodos
+    publico Metodo marcarLuta()
+    FimMetodo
+
+    publico Metodo lutar()
+    FimMetodo

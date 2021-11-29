@@ -1,0 +1,16 @@
+//programa principal
+importar classe Lutador
+
+L: vetor[0..5]
+
+L[0] = novo Lutador("pretty boy", "França", 31, 1.75, 68.9, 11, 3, 1)
+
+L[1] = novo Lutador(...)
+
+L[2] = novo Lutador(...)
+
+L[3] = novo Lutador(...)
+
+L[4] = novo Lutador(...)
+
+L[5] = novo Lutador(...)
