@@ -208,3 +208,11 @@ Aula 6a - Pilares da POO (encapsulamento)
         Lista de serviços fornecidos por um componente. É o contato com o mundo exterior, que define o que pode ser feito com um objeto dessa classe.
 
 Aula 7a - Relacionamento entre classes
+
+Aula 8a - Relacionamento entre classes (parte 2)
+    representando relacionamento no diagrama
+        Para representar a relação de agregação num diagrama de classes, utiliza-se uma linha sólida partindo de uma das classes e dirigindo-se para um losango posicionado sobre a segunda classe.
+        (imagem 8a1)
+    representando multiplicidade
+
+    representando papel e sentido

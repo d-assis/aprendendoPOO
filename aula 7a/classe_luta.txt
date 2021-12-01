@@ -1,4 +1,4 @@
-classe Lutador
+classe Luta
 
 //Atributos
     privado desafiado : Caractere
