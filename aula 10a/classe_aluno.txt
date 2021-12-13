@@ -1,0 +1,24 @@
+// Ao usar a palavra chave "estende", estabelecemos uma relação de herança entre Aluno e Pessoa
+// sendo que Aluno herda metodos e atributos de Pessoa e ainda possui seus atributos e metodos próprios
+classe Aluno estende Pessoa
+    //Atributos
+        privado matri: Inteiro
+        privado curso: Caractere
+    //Metodos
+        publico Metodo cancelarMatri()
+        FimMetodo
+    //Metodos especiais
+        publico Metodo getMatri()
+        FimMetodo
+
+        publico Metodo setMatri(m)
+        FimMetodo
+
+        publico Metodo getCurso()
+        FimMetodo
+
+        publico Metodo setCurso(c)
+        FimMetodo
+
+
+FimClasse

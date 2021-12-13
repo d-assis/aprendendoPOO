@@ -1,0 +1,27 @@
+classe Professor estende Pessoa
+    //Atributos
+        privado espec : Caractere
+        privado salario : Real
+    
+    //Metodos
+        publico Metodo receberAum()
+        FimMetodo
+
+    //Metodos especiais
+        publico Metodo getEspec()
+            retorne espec
+        FimMetodo
+
+        publico Metodo setEspec(e)
+            espec = e
+        FimMetodo
+
+        publico Metodo getSalario()
+            retorne salario
+        FimMetodo
+
+        publico Metodo setSalario(s)
+            salario = s
+        FimMetodo
+
+FimClasse

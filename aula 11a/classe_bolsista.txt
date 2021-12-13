@@ -1,0 +1,16 @@
+classe Bolsista estende Aluno
+    //atributos
+    privado bolsa: Inteiro
+    
+    //metodos
+    publico metodo RenovarBolsa()
+    FimMetodo
+
+    //a palavra chave @Sobrepor indica que o metodo PagarMensalidade(), apesar de já definido na classe mãe Aluno, deve ser sobreescrito na classe Bolsista, assumindo um novo comportamento.
+    @Sobrepor
+    publico metodo PagarMensalidade()
+    FimMetodo
+
+    //metodos especiais
+    (getters e setters...)
+FimClasse

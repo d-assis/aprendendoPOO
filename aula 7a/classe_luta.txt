@@ -1,19 +1,58 @@
 classe Luta
 
 //Atributos
-    privado desafiado : Caractere
+    // ao declarar desafiante e desafiado, especificamos o tipo Lutador, que faz referência a classe Lutador criada anteriormente
+    // fazendo isso, o atributo será interpretado como um tipo abstrato de dados, e na prática, pode receber como conteúdo qualquer instanciamento da classe Lutador
+    privado desafiado : Lutador
 
-    privado desafiante: Caractere
+    privado desafiante: Lutador
 
     privado rounds: Inteiro
 
     privado aprovada: Logico
 
 //Metodos especiais
+    publico Metodo construtor()
+    FimMetodo
+
+    publico Metodo setDesafiado(dd: Lutador)
+        Luta.desafiado = dd
+    FimMetodo
+
+    publico Metodo getDesafiado
+        retorne Luta.desafiado
+    FimMetodo
+
+    (demais geters e seters...)
 
 //Metodos
-    publico Metodo marcarLuta()
+    publico Metodo marcarLuta(l1,l2 : Lutador)
+        se((l1.getCategoria() == l2.getCategoria()) e (l1 =! l2)) entao
+            aprovada = verdadeiro
+            setDesafiado(l1)
+            setDesafiante(l2)
+        senao
+            aprovada = falso
+            desafiante = nulo
+            desafiado = nulo
     FimMetodo
 
     publico Metodo lutar()
+        se(Luta.getAprovada() == verdadeiro)
+            desafiado.apresentar()
+            desafiante.apresentar()
+            vencedor = aleatório(0..2)
+            escolha (vencedor)
+                caso 0: //Empate
+                    desafiado.empatarLuta()
+                    desafiante.empatarLuta()
+
+                caso 1: //Ganhou desafiado
+                    desafiado.vencerLuta()
+                    desafiante.perderLuta()
+                caso 2: //Ganhou desafiante
+                    desafiado.perderLuta()
+                    desafiante.vencerLuta()
+        senao 
+            Escreva("Luta não vai acontecer")
     FimMetodo

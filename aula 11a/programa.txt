@@ -1,0 +1,14 @@
+importar classe_pessoa
+importar classe_visitante
+importar classe_aluno
+importar classe_bolsista
+
+//linha abaixo é inválida pois pessoa é uma classe abstrata, não pode ser instanciada
+p1 = novo Pessoa()
+
+//no caso da linha abaixo, o comando seria válido uma vez que visitante não é uma classe abstrata
+v1 = novo Visitante()
+
+a1 = novo Aluno()
+
+b1 = novo Bolsista

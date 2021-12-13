@@ -1,0 +1,40 @@
+classe Pessoa
+
+    // Atributos
+        privado nome : Caractere
+        privado idade : Inteiro
+        privado sexo : Caractere
+
+    //Metodos especiais
+        publico Metodo construtor()
+        FimMetodo
+
+        publico Metodo getNome()
+            retorne nome
+        FimMetodo
+
+        publico Metodo setNome(n)
+            nome = n
+        FimMetodo
+
+        publico Metodo getIdade()
+            retorne idade
+        FimMetodo
+
+        publico Metodo setIdade(i)
+            idade = i
+        FimMetodo
+
+        publico Metodo getSexo()
+            retorne sexo
+        FimMetodo
+
+        publico Metodo setSexo(s)
+            sexo = s
+        FimMetodo
+
+    //Metodos
+        publico Metodo fazerAniv()
+        FimMetodo
+
+FimClasse

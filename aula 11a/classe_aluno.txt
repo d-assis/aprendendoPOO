@@ -1,0 +1,12 @@
+classe Aluno estende Pessoa
+    //atributos
+    privado matricula: Inteiro
+    privado curso: Caractere
+
+    //metodos
+    publico metodo PagarMensalidade()
+    FimMetodo
+
+    //metodos especiais
+    (getters e setters...)
+FimClasse

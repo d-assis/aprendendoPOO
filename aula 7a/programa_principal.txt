@@ -1,5 +1,6 @@
 //programa principal
 importar classe Lutador
+importar classe Luta
 
 L: vetor[0..5]
 
@@ -14,3 +15,7 @@ L[3] = novo Lutador(...)
 L[4] = novo Lutador(...)
 
 L[5] = novo Lutador(...)
+
+UEC01 = novo Luta()
+UEC01.marcarLuta(L[0],L[1])
+UEC01.lutar()

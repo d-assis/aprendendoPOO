@@ -214,5 +214,46 @@ Aula 8a - Relacionamento entre classes (parte 2)
         Para representar a relação de agregação num diagrama de classes, utiliza-se uma linha sólida partindo de uma das classes e dirigindo-se para um losango posicionado sobre a segunda classe.
         (imagem 8a1)
     representando multiplicidade
-
+        (imagem 8a2)
     representando papel e sentido
+        (imagem 8a2)
+    Relação de agregação
+        uma relação de agregação entre partes pressupõe que uma parte contém outra.
+        ex.: A classe luta *tem um* lutador (instância da classe Lutador) participante 
+
+Aula 10a - Herança (pt1)
+    Conceito de Herança
+        Permite basear uma nova classe na definição de uma outra classe previamente existente.
+        A herança será aplicada tanto para características quanto para os comportamentos.
+
+    Representação de herança no diagrama
+        imagem 10a1
+
+Aula 11a - Herança (pt2)
+    Termos da árvore de herança
+        *vide imagem 11a1
+        Raiz: classe que origina todas as subclasses e não possui superclasse
+
+        folha: qualquer classe originada apartir de uma superclasse e que não possua subclasses
+
+        descendente: subclasses geradas apartir de um filho de uma superclasse, classes "netas", "bisnetas" e adiante
+
+        ancestral: superclasses com "netas" e adiante 
+
+        especialização: percorrer a árvore de herança partindo das superclasses em direção às subclasses
+
+        generalização: percorrer a árvore de herança partindo das subclasses em direção às superclasses
+
+    Tipos de herança
+        Herança de implementação: nesse tipo, a subclasse herdam os métodos e atributos sem qualquer diferença com relação à progenitora.
+
+        Herança para diferença: já nesse tipo, a herança pressupõe uma adição de métodos e/ou atributos das classes filhas com relação à mãe, ou seja, as filhas possuem características e comportamentos específicos que a mãe não possui
+
+    Mais conceitos de classe no contexto de herança
+        Classe abstrata: Não pode ser instanciada. Só pode servir como progenitora
+
+        Método abstrato: declarado mas não implementado na progenitora
+
+        Classe final: Não pode ser herdada por outra classe. Obrigatoriamente folha.
+
+        Método final: Não pode ser sobrescrito pelas suas subclasses. Obrigatóriamente herdado

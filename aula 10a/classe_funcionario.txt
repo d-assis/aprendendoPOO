@@ -1,0 +1,25 @@
+classe Funcionario estende Pessoa
+    //Atributos
+        privado setor : Caractere
+        privado trabalhando : Logico
+    //Metodos
+        publico Metodo mudartrabalho()
+        FimMetodo
+
+    //Metodos especiais
+        publico Metodo getSetor()
+            retorne setor
+        FimMetodo
+
+        publico Metodo setSetor(st)
+            setor = st
+        FimMetodo
+
+        publico Metodo getTrabalhando()
+            retorne trabalhando
+        FimMetodo
+
+        publico Metodo setTrabalhando(tb)
+            trabalhando = tb
+        FimMetodo
+FimClasse

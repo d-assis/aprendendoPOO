@@ -1,0 +1,26 @@
+importar classe_pessoa
+importar classe_aluno
+importar classe_professor
+importar classe_funcionario
+
+p1 = new Pessoa()
+p2 = new Aluno()
+p3 = new Professor()
+p4 = new Funcionario()
+
+p1.setNome("Pedro")
+p2.setNome("Maria")
+p3.setNome("Cláudio")
+p4.setNome("Fabiana")
+p2.setCurso("Informática")
+p3.setSalario(2500,75)
+p4.setSetor("Estoque")
+
+// comando inválido, a classe Pessoa não tem o método invocado, p1 é uma instância de Pessoa
+p1.receberAum(550,20)
+
+// comando inválido, a classe Aluno não tem o metodo mudartrabalho, p2 é um instância de Aluno
+p2.mudartrabalho()
+
+// comando inválido, a classe Funcionario não tem o metodo cancelarMatri, p4 é um instância de Funcionario
+p4.cancelarMatri()
