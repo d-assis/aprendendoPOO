@@ -1,0 +1,120 @@
+classe abstrata Animal
+    //atributos
+        protegido peso: Real
+        protegido idade: Inteiro
+        protegido Membros: Inteiro
+
+    //metodos
+        publico Metodo abstrato locomover()
+
+        publico Metodo abstrato alimentar()
+
+        publico Metodo abstrato emitirSom()
+
+    //metodos especiais
+    (construtor, getters e setters...)
+FimClasse
+
+classe Mamifero estende Animal
+    //atributos
+        privado corPelo: Caractere
+
+    //metodos
+        @Sobrepor
+        publico Metodo locomover()
+            Escreva("Correndo")
+        FimMetodo
+
+        @Sobrepor
+        publico Metodo abstrato alimentar()
+            Escreva("Mamando")
+        FimMetodo
+
+        @Sobrepor
+        publico Metodo abstrato emitirSom()
+            Escreva("Som de mamífero")
+        FimMetodo
+
+    //metodos especiais
+    (construtor, getters e setters...)
+FimClasse
+
+classe Reptil estende Animal
+    //atributos
+        privado corEscama: Caractere
+
+    //metodos
+        @Sobrepor
+        publico Metodo locomover()
+            Escreva("Rastejando")
+        FimMetodo
+
+        @Sobrepor
+        publico Metodo abstrato alimentar()
+            Escreva("Comendo vegetais")
+        FimMetodo
+
+        @Sobrepor
+        publico Metodo abstrato emitirSom()
+            Escreva("Som de réptil")
+        FimMetodo
+
+    //metodos especiais
+    (construtor, getters e setters...)
+FimClasse
+
+classe Peixe estende Animal
+    //atributos
+        privado corEscama: Caractere
+
+    //metodos
+        publico Metodo soltarBolha()
+            Escreva("0Oo BuBbLe oO0")
+        FimMetodo
+
+        @Sobrepor
+        publico Metodo locomover()
+            Escreva("Nadando")
+        FimMetodo
+
+        @Sobrepor
+        publico Metodo abstrato alimentar()
+            Escreva("Comendo plancton")
+        FimMetodo
+
+        @Sobrepor
+        publico Metodo abstrato emitirSom()
+            Escreva("Sem som")
+        FimMetodo
+
+    //metodos especiais
+    (construtor, getters e setters...)
+FimClasse
+
+classe Ave estende Animal
+    //atributos
+        privado corPena: Caractere
+
+    //metodos
+        publico Metodo fazerNinho()
+            Escreva("Fazendo ninho")
+        FimMetodo
+
+        @Sobrepor
+        publico Metodo locomover()
+            Escreva("Voando")
+        FimMetodo
+
+        @Sobrepor
+        publico Metodo abstrato alimentar()
+            Escreva("Comendo insetos")
+        FimMetodo
+
+        @Sobrepor
+        publico Metodo abstrato emitirSom()
+            Escreva("Som de ave")
+        FimMetodo
+
+    //metodos especiais
+    (construtor, getters e setters...)
+FimClasse

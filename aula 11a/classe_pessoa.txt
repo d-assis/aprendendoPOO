@@ -1,8 +1,8 @@
 classe abstrata Pessoa
     //atributos
-    privado nome: Caractere
-    privado idade: Inteiro
-    privado sexo: Caractere
+    protegido nome: Caractere
+    protegido idade: Inteiro
+    protegido sexo: Caractere
     
     //metodos especiais
     (getters e setters...)

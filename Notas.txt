@@ -257,3 +257,14 @@ Aula 11a - Herança (pt2)
         Classe final: Não pode ser herdada por outra classe. Obrigatoriamente folha.
 
         Método final: Não pode ser sobrescrito pelas suas subclasses. Obrigatóriamente herdado
+
+Aula 12a - Polimorfismo (pt1)
+    Definição
+        Permitir que um mesmo nome represente vários comportamentos (métodos) diferentes
+
+    Assinatura de um método
+        quantidade e os tipos dos parâmetros exigidos por um método definem a sua assinatura. Vide imagem 12a1.
+
+    Tipos de polimorfismo
+        Polimorfismo de sobreposição
+            Acontece quando substituímos um método de uma superclasse na sua subclasse, usando a mesma assinatura.

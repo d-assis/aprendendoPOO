@@ -1,0 +1,46 @@
+importar classes_animais
+
+// Programa principal
+
+// linha inválida, animal é uma classe abstrata e não pode ser instanciada
+n = novo Animal()
+
+//instanciando sub-classes de Animal
+m = novo Mamifero()
+r = novo Reptil()
+a = novo Ave()
+p = novo Peixe()
+
+//alterando valores de atributos do objeto criado (Mamifero)
+m.setPeso(85.3)
+m.setIdade(2)
+m.setMembros(4)
+
+//chamando métodos de um objeto criado (mamífero)
+m.locomover() // deve retornar "Correndo"
+m.alimentar() // deve retornar "mamando"
+m.emitirSom() // deve retornar "som de mamífero"
+
+//alterando valores de atributos do objeto criado (peixe)
+p.setPeso(0.35)
+p.setIdade(1)
+p.setMembros(0)
+
+//chamando métodos de um objeto criado (peixe)
+p.locomover() // deve retornar "Nadando"
+p.alimentar() // deve retornar "Comendo plancton"
+p.emitirSom() // deve retornar "Sem som"
+p.soltarBolha() // deve retornar "0Oo BuBbLe oO0"
+
+//alterando valores de atributos do objeto criado (ave)
+a.setPeso(0.89)
+a.setIdade(2)
+a.setMembros(4)
+
+//chamando métodos de um objeto criado (ave)
+p.locomover() // deve retornar "Voando"
+p.alimentar() // deve retornar "Comendo insetos"
+p.emitirSom() // deve retornar "Som de ave"
+p.fazerNinho() // deve retornar "Fazendo ninho"
+
+//todos os métodos invocados acima, com mesmos nomes e resultados distintos, caracterizam polimorfismo
