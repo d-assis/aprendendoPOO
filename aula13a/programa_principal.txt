@@ -1,0 +1,12 @@
+//programa principal
+
+c = novo Cachoro()
+
+c.reagir("Oi bebê") // Abanar cauda
+c.reagir("cachorro mau!") // Rosnar
+c.reagir(11, 45) // Abanar cauda
+c.reagir(21, 00) // ignorar
+c.reagir(verdadeiro) // Abanar cauda e latir
+c.reagir(falso) // Rosnar
+c.reagir(2, 12.5) // Latir
+c.reagir(17, 4.5) // Rosnar

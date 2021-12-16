@@ -258,7 +258,7 @@ Aula 11a - Herança (pt2)
 
         Método final: Não pode ser sobrescrito pelas suas subclasses. Obrigatóriamente herdado
 
-Aula 12a - Polimorfismo (pt1)
+Aula 12a e 13a - Polimorfismo (pt1 e pt2)
     Definição
         Permitir que um mesmo nome represente vários comportamentos (métodos) diferentes
 
@@ -268,3 +268,6 @@ Aula 12a - Polimorfismo (pt1)
     Tipos de polimorfismo
         Polimorfismo de sobreposição
             Acontece quando substituímos um método de uma superclasse na sua subclasse, usando a mesma assinatura.
+
+        Polimorfismo de sobrecarga
+            Acontece quando numa classe há vários métodos de mesmo nome e assinaturas diferentes configurando comportamentos diversos.

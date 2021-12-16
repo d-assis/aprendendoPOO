@@ -1,0 +1,41 @@
+classe Cachorro estende Lobo
+    pulico metodo reagir(frase: Caractere)
+        se(frase == "toma comida" ou frase == "Oi bebê") entao
+            Escreva("Abanar cauda")
+        senao
+            Escreva("Rosnar")
+        FimSe
+    FimMetodo
+
+    publico metodo reagir(hora, min: Inteiro)
+        se(hora < 12 )
+            Escreva("Abanar cauda")
+        senaoSe(hora >= 18)
+            Escreva("ignorar")
+        senao
+            escreva("Abanar cauda e latir")
+    FimMetodo
+
+    publico metodo reagir(dono: Logico)
+        se(dono == verdadeiro)
+            Escreva("Abanar cauda e latir")
+        senao
+            Escreva("Rosnar")
+    FimMetodo
+
+    publico metodo reagir(idade: Inteiro, peso: Real)
+        se(idade < 5)
+            se(peso < 10)
+                Escreva("Abanar cauda e latir")
+            senao
+                Escreva("latir")
+            FimSe
+        senao
+            se(peso < 10)
+                Escreva("Rosnar")
+            senao
+                Escreva("ignorar")
+            FimSe
+        FimSe
+    FimMetodo
+FimClasse
