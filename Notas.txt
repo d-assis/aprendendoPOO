@@ -110,6 +110,14 @@ Aula 3 - Visibilidade de um objeto
         # representa visibilidade protegida
             classe atual e todas as suas subclasses possuem acesso ao componente
 
+        Nota sobre os níveis de visibilidade (img 3a1)
+            Quando pensamos nos 3 níveis de visibilidade de componentes, podemos relacionar com a imagem de um prédio. 
+            No andar mais baixo temos o que é privado, logo acima o protegido e no topo o que é público.
+            Relacionando com o conceito de herança, subclasses ao herdar métodos só podem alterar a visibilidade desses métodos em direção ao topo do prédio.
+            Dessa forma, uma subclasse que herda um método público, não pode torná-lo protegido ou privado. 
+            Alternativamente, herdando um método privado, seria possível modificá-lo para protegido ou público.
+            Herdando métodos protegidos, é possível torná-los públicos.
+
     Exemplo de declaração de classe com visibilidade
         Classe Caneta
             Publico modelo: Caractere
@@ -263,7 +271,7 @@ Aula 12a e 13a - Polimorfismo (pt1 e pt2)
         Permitir que um mesmo nome represente vários comportamentos (métodos) diferentes
 
     Assinatura de um método
-        quantidade e os tipos dos parâmetros exigidos por um método definem a sua assinatura. Vide imagem 12a1.
+        Nome do método, quantidade e os tipos dos parâmetros exigidos por um método definem a sua assinatura. Vide imagem 12a1.
 
     Tipos de polimorfismo
         Polimorfismo de sobreposição
@@ -271,3 +279,7 @@ Aula 12a e 13a - Polimorfismo (pt1 e pt2)
 
         Polimorfismo de sobrecarga
             Acontece quando numa classe há vários métodos de mesmo nome e assinaturas diferentes configurando comportamentos diversos.
+
+        Polimorfismo de inclusão
+
+        Polimorfismo paramétrico
