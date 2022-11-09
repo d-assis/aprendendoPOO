@@ -82,7 +82,7 @@ Aula 2 - O que são objetos
             Azul
             100% de carga
 
-        Exemplo de intanciamento
+        Exemplo de instanciamento
             c1 = nova Caneta
             c1.cor = "Azul"
             c1.ponta = 0.5
